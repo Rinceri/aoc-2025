@@ -72,7 +72,7 @@ def main():
 
     safe.process_input(rotations)
     
-    print(safe.get_zeros())
-    print(safe.get_passing_zeros())
+    print(f"Landed on zero: {safe.get_zeros()} times")
+    print(f"Passed zero {safe.get_passing_zeros()} times")
 
 main()
