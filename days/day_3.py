@@ -21,12 +21,6 @@ class OrderedBatteries:
     def get_int_order(self) -> int:
         return int(''.join(map(str, self.order)))
 
-    def replace_first_battery(self, battery: int):
-        old_first = self.order[0]
-        self.order[0] = battery
-
-        return old_first
-        
     def replace_last_battery(self, previous_battery: int):
         if previous_battery > self.order[-1]:
             self.order[-1] = previous_battery
